@@ -1,0 +1,10 @@
+#! /bin/bash
+
+set -e
+
+tar czf so1.2017.2018.2.1701014.tgz program01.py program02.py
+if [[ -e grader.2/so1.2017.2018.2.1701014.tgz ]]; then
+	rm grader.2/so1.2017.2018.2.1701014.tgz
+fi
+
+mv so1.2017.2018.2.1701014.tgz grader.2/

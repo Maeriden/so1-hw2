@@ -1,0 +1,3 @@
+#! /bin/bash
+
+./pack && (pushd grader.2 > /dev/null; bash ./grader.2.sh ${1}; popd > /dev/null)
